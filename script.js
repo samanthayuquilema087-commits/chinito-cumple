@@ -8,24 +8,36 @@ const musica = document.getElementById("musica");
 
 const carta = `Mi chinito ❤️
 
-Hoy es un día muy especial porque celebramos tu cumpleaños.
+const carta = `
+Mi amor:
 
-Quería regalarte algo diferente, algo hecho con mucho cariño.
+Este día es muy especial para ti porque es tu cumpleaños. Aunque yo no pueda estar ahí contigo, aun así quería felicitarte porque eres mi persona favorita.
 
-Gracias por cada sonrisa, por cada momento y por hacerme sentir tan feliz cuando estoy contigo.
+Gracias por llegar a mi vida, por convertir los momentos simples en recuerdos hermosos, por hacerme reír cuando más lo necesitaba y por llenarme de felicidad con tu forma de ser.
 
-Espero que este nuevo año de tu vida esté lleno de sueños cumplidos, mucha salud y muchísima felicidad.
+De verdad eres alguien muy importante para mí, y me hace feliz poder tenerte en mi vida aunque sea de esta forma.
 
-Nunca olvides lo increíble que eres.
+Espero que hoy lo pases increíble, que sonrías mucho, que te consientan bastante y que todos tus deseos se cumplan. Aunque estemos lejos, siempre te voy a tener presente.
 
-Te admiro muchísimo y me haces muy feliz.
+Feliz cumpleaños, chinito 💖
+`;
 
-Espero poder seguir compartiendo muchos momentos a tu lado.
+abrir.onclick = () => {
+  alert(carta);
+};
+const entrar=document.getElementById("entrar");
 
-Feliz cumpleaños, mi amor.
+const tituloCarta=document.querySelector(".tituloCarta");
 
-Te amo muchísimo. 💜`;
+entrar.onclick=()=>{
 
+document.querySelector(".inicio").style.display="none";
+
+document.getElementById("sobre").style.display="block";
+
+tituloCarta.style.display="block";
+
+}
 abrir.onclick = () => {
 
 sobre.classList.add("abierto");
