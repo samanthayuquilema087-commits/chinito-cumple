@@ -9,22 +9,23 @@ const musica = document.getElementById("musica");
 const carta = `Mi chinito ❤️
 
 const carta = `
+const carta = `
 Mi amor:
 
 Este día es muy especial para ti porque es tu cumpleaños. Aunque yo no pueda estar ahí contigo, aun así quería felicitarte porque eres mi persona favorita.
 
 Gracias por llegar a mi vida, por convertir los momentos simples en recuerdos hermosos, por hacerme reír cuando más lo necesitaba y por llenarme de felicidad con tu forma de ser.
 
-De verdad eres alguien muy importante para mí, y me hace feliz poder tenerte en mi vida aunque sea de esta forma.
+Espero que hoy lo pases increíble, que sonrías mucho y que todos tus deseos se cumplan. Aunque estemos lejos, siempre te voy a tener presente.
 
-Espero que hoy lo pases increíble, que sonrías mucho, que te consientan bastante y que todos tus deseos se cumplan. Aunque estemos lejos, siempre te voy a tener presente.
-
-Feliz cumpleaños, chinito 💖
+Feliz cumpleaños.
 `;
 
 abrir.onclick = () => {
   alert(carta);
 };
+
+
 const entrar=document.getElementById("entrar");
 
 const tituloCarta=document.querySelector(".tituloCarta");
