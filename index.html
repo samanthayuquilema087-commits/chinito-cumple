@@ -1,191 +1,111 @@
-
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Feliz Cumpleaños, Chinito ❤️</title>
+<title>Para ti, mi Chinito 💜</title>
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
-}
+<link rel="stylesheet" href="style.css">
 
-body{
-background:linear-gradient(135deg,#ffd6e7,#ffeef5,#fff5f8);
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-overflow:hidden;
-}
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-.card{
-background:white;
-width:90%;
-max-width:550px;
-padding:40px;
-border-radius:25px;
-box-shadow:0 15px 35px rgba(0,0,0,.15);
-text-align:center;
-animation:aparecer 1s;
-position:relative;
-z-index:2;
-}
-
-h1{
-color:#ff4d88;
-font-size:35px;
-margin-bottom:15px;
-}
-
-p{
-font-size:18px;
-color:#555;
-line-height:1.7;
-margin-bottom:25px;
-}
-
-button{
-padding:14px 30px;
-font-size:17px;
-border:none;
-border-radius:30px;
-background:#ff6b9f;
-color:white;
-cursor:pointer;
-transition:.3s;
-}
-
-button:hover{
-transform:scale(1.05);
-background:#ff4f8d;
-}
-
-#carta{
-display:none;
-margin-top:25px;
-animation:fade .8s;
-}
-
-.rosa{
-font-size:70px;
-margin-top:20px;
-animation:latido 2s infinite;
-}
-
-.corazon{
-position:absolute;
-font-size:25px;
-animation:caer linear infinite;
-opacity:.8;
-}
-
-@keyframes caer{
-0%{
-transform:translateY(-100px);
-}
-100%{
-transform:translateY(110vh);
-}
-}
-
-@keyframes aparecer{
-from{
-opacity:0;
-transform:translateY(30px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-
-@keyframes fade{
-from{opacity:0;}
-to{opacity:1;}
-}
-
-@keyframes latido{
-0%,100%{
-transform:scale(1);
-}
-50%{
-transform:scale(1.15);
-}
-}
-</style>
 </head>
 
 <body>
 
-<div class="card">
+<div id="stars"></div>
 
-<h1>🎉 ¡Feliz Cumpleaños, Chinito! ❤️</h1>
+<div class="overlay"></div>
 
-<p>
-Hoy quería regalarte algo diferente...
-porque las palabras también pueden ser un regalo. 🌸
+<div class="container">
+
+<h1>
+
+Para ti,<br>
+
+<span>mi Chinito 💜</span>
+
+</h1>
+
+<p class="texto">
+
+Hoy es un día muy especial... ✨<br>
+
+y quería hacerlo aún más bonito para ti.
+
 </p>
 
-<button onclick="mostrarCarta()">
-💌 Abrir Carta
+<div class="sobre" id="sobre">
+
+<div class="tapa"></div>
+
+<div class="carta">
+
+💌
+
+</div>
+
+</div>
+
+<button id="abrir">
+
+💜 Abrir mi carta
+
 </button>
 
-<div id="carta">
+<div id="mensaje" class="oculto">
 
-<p>
-Primero que todo, quiero desearte un cumpleaños muy feliz. 🥳❤️
+<h2>
 
-Gracias por cada momento, por cada risa y por ser alguien tan especial.
+Feliz Cumpleaños ❤️
 
-Espero que este nuevo año de tu vida esté lleno de felicidad, salud, sueños cumplidos y personas que te quieran muchísimo.
+</h2>
 
-Nunca dejes de sonreír, porque tu sonrisa hace muy bonito el mundo de quienes te rodean.
+<p id="typing"></p>
 
-Gracias por existir.
+<div class="botones">
 
-Con mucho cariño...
-para ti. ❤️
-</p>
+<button id="especial">
 
-<div class="rosa">🌹</div>
+🐈 ¿Por qué eres especial?
+
+</button>
+
+<button id="amor">
+
+❤️ Lo que siento por ti
+
+</button>
+
+<button id="final">
+
+🎁 Última sorpresa
+
+</button>
 
 </div>
 
 </div>
 
-<script>
+<audio id="musica" loop>
 
-function mostrarCarta(){
-document.getElementById("carta").style.display="block";
-}
+<source src="musica.mp3" type="audio/mpeg">
 
-for(let i=0;i<35;i++){
+</audio>
 
-let c=document.createElement("div");
+<button id="playMusic" class="music">
 
-c.innerHTML="💖";
+🎵
 
-c.className="corazon";
+</button>
 
-c.style.left=Math.random()*100+"vw";
+</div>
 
-c.style.animationDuration=(5+Math.random()*5)+"s";
-
-c.style.fontSize=(18+Math.random()*25)+"px";
-
-c.style.animationDelay=Math.random()*5+"s";
-
-document.body.appendChild(c);
-
-}
-
-</script>
+<script src="script.js"></script>
 
 </body>
+
 </html>
