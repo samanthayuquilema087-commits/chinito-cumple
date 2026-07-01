@@ -147,6 +147,7 @@ margin-bottom:35px;
 }
 
 .sobre{
+  display:none;
 
 width:180px;
 
@@ -239,6 +240,9 @@ box-shadow:0 0 35px #ffb3ff;
 }
 
 .oculto{
+display:none;
+}
+
 
 display:none;
 
@@ -325,5 +329,54 @@ opacity:1;
 transform:translateY(0);
 
 }
+
+}
+.frase{
+
+font-size:18px;
+
+color:#ffd8ff;
+
+margin-bottom:15px;
+
+letter-spacing:1px;
+
+}
+
+.linea{
+
+width:230px;
+
+height:3px;
+
+background:linear-gradient(90deg,#ff9cff,#ffffff,#ff9cff);
+
+margin:25px auto;
+
+border-radius:30px;
+
+box-shadow:0 0 15px #ff7fff;
+
+}
+
+#entrar{
+
+margin-top:30px;
+
+font-size:22px;
+
+padding:16px 45px;
+
+}
+
+.tituloCarta{
+
+display:none;
+
+margin-top:50px;
+
+font-size:30px;
+
+color:#ffdfff;
 
 }
